@@ -1,0 +1,43 @@
+<HDML VERSION="3.0" MARKABLE="TRUE" PUBLIC="TRUE">
+
+<CHOICE NAME="help" TITLE="bbs_help">
+	<ACTION TYPE="SOFT1" TASK="prev" LABEL="戻る">
+	<CENTER>[使い方説明]
+	<CE TASK="GO" DEST="#tree" LABEL="ツリー">[ツリー表示]
+	<CE TASK="GO" DEST="#form" LABEL="書込">[新規書込み]
+	<CE TASK="GO" DEST="#seek" LABEL="検索">[記事の検索]
+	<CE TASK="GO" DEST="#del"  LABEL="削除">[記事の削除]
+</CHOICE>
+
+<DISPLAY NAME ="tree" TITLE="bbs_help_tree">
+	<CENTER>[ツリー表示]<BR>
+	記事の表示をします。ツリー一覧→個別ツリー→個別記事と階層になっています。<BR>
+	ツリー一覧では、ツリーの親記事のみが表示され、新規書込みのあったツリーの先頭が☆になり、そうでないものは、★になります。ツリーの記事数も表示されます。<BR>
+	個別ツリーでは、ツリー一覧で選択されたツリーの親記事とレス記事が表示されます。また、そのツリーにレスをつけることが出来ます。<BR>
+	新規にレスが書きこまれたツリーは順番が一番上に来ます。<BR>
+	個別表示では、個別ツリーで選択された記事を表示します。<BR>
+</DISPLAY>
+
+<DISPLAY NAME ="form" TITLE="bbs_help_form">
+	<CENTER>[新規書込み]<BR>
+	新規に書込みをします。書込みをすると新しいツリーが出来ます。<BR>
+	名前、題名、本文の入力は必須です。<BR>
+	削除パスワードを入力しないと記事の削除が出来なくなります。<BR>
+	クッキーにより２度目以降は、フォームに行くと自動的に入力されます。<BR>
+</DISPLAY>
+
+<DISPLAY NAME ="seek" TITLE="bbs_help_form">
+	<CENTER>[記事の検索]<BR>
+	検索文字列に一致する記事を探し出します。<BR>
+	検索条件をANDもしくはORに設定し、文字列を入力して検索してください。<BR>
+	文字列はスペースで区切って入力してください。<BR>
+	検索結果は、一覧で表示されますので、見たい記事を選択してください。<BR>
+</DISPLAY>
+
+<DISPLAY NAME ="del" TITLE="bbs_help_del">
+	<CENTER>[記事の削除]<BR>
+	投稿した記事を削除する機能です。<BR>
+	記事の番号と削除パスワードを入力し、削除を選択します。<BR>
+</DISPLAY>
+
+</HDML>
